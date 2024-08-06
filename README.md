@@ -1,4 +1,5 @@
 # Zoo Website Landing Page
+![Zoo Website Landing Page](./src/assets/image.png)
 
 Welcome to the repository for the Zoo Website Landing Page! This project is a responsive landing page for a zoo, designed to provide information about the zoo, its animals, exhibits, and more. The page features animations, a clean layout, and uses modern web development techniques.
 
