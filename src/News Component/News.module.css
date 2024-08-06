@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+:root {
+    --buttonBackground: rgb(70, 159, 211);
+}
+
+.newsContainer {
+    width: 100vw;
+    margin: 80px 0;
+}
+
+.news {
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin: auto;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rowStyle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsDisplay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.card {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    width: 430px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px gray;
+}
+
+.imgContainer {
+    width: 90%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.imgContainer:hover .cardImage {
+    transform: scale(1.1);
+}
+
+.iconHover {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.imgContainer:hover .iconHover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.cardName {
+    margin-bottom: -10px;
+    font-size: 2.1em;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.cardDesc {
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.allNews {
+    background-color: white;
+    color: var(--buttonBackground);
+    border: 2px solid var(--buttonBackground);
+}
+
+.allNews:hover {
+    color: white;
+    background-color: var(--buttonBackground);
+    border: 2px solid transparent;
+}
+
+.learnMore {
+    background-color: white;
+    color: var(--buttonBackground);
+    border: 2px solid var(--buttonBackground);
+}
+
+.learnMore:hover {
+    background-color: var(--buttonBackground);
+    color: white;
+    border: 2px solid transparent
+}
+
+.visible {
+    animation: fadeIn 0.3s ease-in-out both;
+}
+
+@media only screen and (max-width: 1500px) {
+    .newsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .news {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .rowStyle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .newsDisplay {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+
+    .card {
+        width: 470px;
+        height: 440px;
+    }
+
+    .cardName {
+        font-size: 3em;
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+
+    .cardDesc {
+        font-size: 1.7em;
+    }
+    
+    .separator {
+        margin: 60px;
+    }
+}

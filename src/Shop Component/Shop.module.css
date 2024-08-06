@@ -1,0 +1,112 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.shopContainer {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(38,177,68,1) 24%);
+    position: relative;
+    left: -10px;
+    padding: 20px;
+    padding-top: 6.5em;
+    padding-bottom: 55px;
+    overflow: hidden;
+}
+
+.shop {
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1500px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2.7em;
+    transition: all 0.3s;
+}
+
+.shopButton {
+    background-color: rgb(228, 151, 36);
+}
+
+.shopButton:hover {
+    background-color: rgb(196, 122, 11);
+}
+
+.image {
+    object-fit: cover;
+    object-position: left;
+    width: 650px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+.sectionHeader {
+    text-wrap: nowrap;
+    font-size: 4.5em;
+}
+
+.sectionDesc {
+    flex: 1;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.centerButton {
+    margin-top: 70px;
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    position: relative;
+}
+
+.pandaPaw {
+    position: absolute;
+    transform: rotate(30deg);
+    right: -20px;
+    top: 40px;
+    opacity: 0.2;
+}
+
+.visible {
+    animation: fadeIn 0.3s ease-in-out both;
+}
+
+@media only screen and (max-width: 1500px) {
+    .image {
+        display: none;
+    }
+
+    .shop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

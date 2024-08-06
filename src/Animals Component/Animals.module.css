@@ -1,0 +1,99 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animalsContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.animals {
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin: auto;
+    width: 1500px;
+    height: 750px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+}
+
+.footprint {
+    position: absolute;
+    width: 800px;
+    opacity: 0.2;
+    transform: rotate(-22deg);
+    top: 0;
+    left: 0;
+}
+
+.image {
+    object-fit: cover;
+    width: 650px;
+    height: 450px;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.button {
+    border: none;
+    color: white;
+    font-size: 2em;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.buyTicket {
+    background-color: rgb(79, 129, 221);
+}
+
+.buyTicket:hover {
+    background-color: rgb(46, 102, 207);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainText {
+    margin: 0;
+    font-size: 4.4em;
+}
+
+.mainDesc {
+    font-size: 2em;
+}
+
+.visible {
+    animation: fadeIn 0.3s ease-in-out both;
+}
+
+@media only screen and (max-width: 1500px) {
+    .animals {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .image, .footprint {
+        display: none;
+    }
+}

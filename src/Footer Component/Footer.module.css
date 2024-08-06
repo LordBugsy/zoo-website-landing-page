@@ -1,0 +1,55 @@
+.footerContainer {
+    position: relative;
+    width: 100%;
+    background-color: rgb(110, 154, 179);
+    padding-top: 40px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 1500px;
+}
+
+.firstRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.firstRow a {
+    color: white;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.firstRow a:hover {
+    color: rgb(185, 214, 55);
+}
+
+.secondRow {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.color {
+    color: rgb(27, 101, 145);
+}
+
+.desc, .copyright {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1500px) {
+    .footer {
+        width: 90%;
+    }
+}

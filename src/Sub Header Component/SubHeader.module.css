@@ -1,0 +1,106 @@
+.subHeaderContainer {
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(214,177,55,1) 94%, rgba(255,255,255,1) 97%);
+    padding-top: 6.5em;
+    padding-bottom: 150px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.subHeader {
+    width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 240px;
+    position: relative;
+}
+
+.lionPaws {
+    position: absolute;
+    left: -250px;
+    top: -220px;
+    opacity: 0.2;
+}
+
+.image {
+    object-fit: cover;
+    width: 560px;
+    height: 550px;
+    object-position: left;
+    border-radius: 10%;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.mainText {
+    margin-top: 0;
+    font-size: 4.4em;
+    color: white;
+}
+
+.color {
+    color: black;
+}
+
+.mainDesc {
+    font-size: 1.8em;
+    margin-top: 0px;
+    color: white;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 2em;
+    transition: all 0.3s;
+}
+
+.signUp {
+    background-color: rgb(92, 167, 218);
+}
+
+.signUp:hover {
+    background-color: rgb(47, 133, 190);;
+}
+
+.buyTicket {
+    background-color: rgb(73, 209, 73);
+}
+
+.buyTicket:hover {
+    background-color: rgb(35, 179, 35);
+}
+
+@media only screen and (max-width: 1500px) {
+    .image {
+        display: none;
+    }
+
+    .subHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}
