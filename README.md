@@ -106,4 +106,4 @@ export default App;
 ```
 
 ## License
-This project is licensed under the MIT License. You are free to use, edit, and distribute this project as you'd like, under the terms of the MIT License. For more details, see the [LICENSE](./LICENSE) file.
+This project is licensed under the MIT License. You are free to use, edit, and distribute this project as you'd like, under the terms of the MIT License. For more details, see the [LICENSE](https://github.com/LordBugsy/zoo-website-landing-page/blob/master/LICENSE.txt) file.
